@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/team.css" />
+    <link
+      rel="icon"
+      href="https://en.astridygaston.com/wp-content/uploads/sites/2/2017/04/cropped-favicon-32x32.png"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/ed147ffc0c22f110b20a665b27adfc1b?family=GT+Sectra+Display"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/06fcebf2389f170c4e0f9e5286b1c5f6?family=Azo+Sans+Lt"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Equipe - Astrid & Gaston</title>
+  </head>
+  <body>
+    <div id="nav-page">
+      <img src="../assets/cwJzPHv2uNhGoTpEc-200-x.webp" alt="logo" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./kitchen.html">Cuisine</a></li>
+          <li><a href="./team.html" class="here">Equipe</a></li>
+          <li><a href="./history.html">Histoire</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="fade-white">
+        <h1>L'Equipe</h1>
+      </div>
+    </header>
+    <main>
+      <section id="saloon">
+        <div class="saloon-text">
+          <h2>Salon</h2>
+          <p>
+            Le service est peut-être l'ingrédient le plus important dans une
+            expérience de restauration. Notre équipe, composée de professionnels
+            ayant une vaste expérience, et qui comprend des membres de
+            l'Institut Culinaire Pachacutec, est entièrement dédiée à servir et
+            guider nos visiteurs.
+          </p>
+        </div>
+        <img
+          src="../assets/images/7B2A8422ok-1400x933.jpg"
+          alt="salon image section"
+        />
+      </section>
+      <section id="kitchen">
+        <div class="kitchen-text">
+          <h2>La cuisine</h2>
+          <p>
+            Dirigée par Gastón Acurio, notre équipe de cuisine est
+            principalement composée de jeunes expérimentés et créatifs qui n'ont
+            pas peur d'essayer de nouvelles choses. Leur objectif : que la
+            nourriture qu'ils servent réponde aux normes de qualité les plus
+            élevées, tout en continuant à rechercher nos ressources et en
+            entretenant une relation d'apprentissage mutuel avec les producteurs
+            locaux.
+          </p>
+        </div>
+      </section>
+      <div id="harvest"></div>
+      <section id="bar">
+        <div class="bar-text">
+          <h2>Bar</h2>
+          <p>
+            Un endroit pour se détendre et partager l'esprit des invités et de
+            l'équipe de barmans.
+          </p>
+        </div>
+        <img
+          src="../assets/images/7B2A8558ok-1400x933.jpg"
+          alt="bar image section"
+        />
+      </section>
+      <section id="wine-waiter">
+        <div class="wine-waiter-text">
+          <h2>Sommelier</h2>
+          <p>
+            Une équipe avec une philosophie profonde et en constante évolution :
+            les vins sont vivants ; derrière et en eux, il y a toujours une
+            belle histoire à raconter.
+          </p>
+        </div>
+      </section>
+      <section id="join-us">
+        <div class="join-us-text">
+          <p>
+            Nous sommes constamment à la recherche de nouveaux talents pour
+            rejoindre nos équipes de cuisine, de salon et de bar. Si vous êtes
+            intéressé à travailler ou à faire un stage, veuillez remplir le
+            formulaire et nous envoyer votre curriculum vitae, afin que vous
+            puissiez être inclus dans notre processus de sélection.
+          </p>
+          <div id="work-with-us">Travaillez avec nous</div>
+        </div>
+      </section>
+      <div id="team-modal">
+        <div class="modal-content">
+          <img src="../assets/PngItem_5043040.png" id="close" alt="fermer" />
+          <h2>Work with us</h2>
+          <form action="team.html" method="get" onsubmit="return submitForm()">
+            <div class="middle-form">
+              <input type="text" id="lastname" placeholder="Nom" name="nom" />
+              <div id="error-lastname" class="error"></div>
+              <input
+                type="text"
+                id="firstname"
+                placeholder="Prénom"
+                name="prénom"
+              />
+              <div id="error-firstname" class="error"></div>
+            </div>
+            <input type="email" id="email" placeholder="Email" name="email" />
+            <div id="error-email" class="error"></div>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Téléphone"
+              name="téléphone"
+            />
+            <div id="error-phone" class="error"></div>
+            <div class="middle-form">
+              <input type="text" id="city" placeholder="Ville" name="ville" />
+              <div id="error-city" class="error"></div>
+              <input type="text" id="country" placeholder="Pays" name="pays" />
+              <div id="error-country" class="error"></div>
+            </div>
+
+            <input
+              type="text"
+              id="nationality"
+              placeholder="Nationalité"
+              name="nationalité"
+            />
+            <div id="error-nationality" class="error"></div>
+            <div class="middle-form">
+              <div class="job">
+                <label>Domaine : </label>
+                <select name="work" id="work">
+                  <option value=""></option>
+                  <option value="Cuisine">Cuisine</option>
+                  <option value="Salon">Salon</option>
+                  <option value="Bar">Bar</option>
+                  <option value="Potager">Potager</option>
+                </select>
+                <div id="error-work" class="error"></div>
+              </div>
+              <div class="job">
+                <label>Nature de la relation de travail :</label>
+                <select name="contrat" id="contract">
+                  <option value=""></option>
+                  <option value="Travail">Travail</option>
+                  <option value="Stage">Stage</option>
+                </select>
+                <div id="error-contract" class="error"></div>
+              </div>
+            </div>
+            <input type="file" id="file" />
+            <div id="error-file" class="error"></div>
+            <input type="submit" id="form-submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Av. Paz Soldán 290, San Isidro, Lima 27 - Perú</p>
+        <p>T. +511 442-2777</p>
+        <a href="mailto:restaurante@astridygaston.com"
+          >restaurante@astridygaston.com</a
+        >
+      </div>
+      <div class="on-place">
+        <p>Restaurant :</p>
+        <p>Mardi à Samedi</p>
+        <p>- Déjeuner - 13:00 - 15:30</p>
+        <p>- Diner - 19:00 - 23:00</p>
+        <p>Dimanche (brunch) - 11:00 - 16:00</p>
+      </div>
+      <div class="take-away">
+        <p>Commande / Livraison</p>
+        <p>Mardi à Dimanche</p>
+        <p>- Déjeuner - 13:00 - 15:30</p>
+        <p>- Diner - 19:00 - 23:00</p>
+        <p>Dimanche - 11:00 - 16:00</p>
+      </div>
+      <div class="copyright">
+        © Copyright 2023 Astrid&Gastón | Developed by totodej
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="../modal.js"></script>
+  </body>
+</html>
