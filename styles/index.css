@@ -298,3 +298,174 @@ footer a {
   padding: 10px 0px;
   font-family: "Azo Sans Lt";
 }
+
+@media screen and (max-width: 900px) {
+  .presentation-text {
+    width: 70%;
+  }
+
+  #menu-home img {
+    width: 40%;
+  }
+  .menu-home-text {
+    width: 40%;
+  }
+
+  .bar p,
+  .wines p {
+    width: 80%;
+  }
+
+  .our-team-text p {
+    width: 90%;
+  }
+
+  #book-home {
+    grid-template-columns: 40% 60%;
+  }
+
+  .book-home-text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .presentation-text {
+    width: 90%;
+  }
+  #menu-home img {
+    width: 30%;
+  }
+  .menu-home-text {
+    width: 60%;
+  }
+
+  .bar p,
+  .wines p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  header img {
+    width: 350px;
+  }
+
+  #menu-home {
+    height: 650px;
+    flex-direction: column-reverse;
+  }
+
+  #menu-home img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .menu-home-text {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .menu-home-text a {
+    margin: auto;
+  }
+
+  #fluid {
+    display: block;
+    height: 600px;
+  }
+
+  .bar,
+  .wines {
+    width: 100%;
+    height: 300px;
+  }
+
+  .bar p,
+  .wines p {
+    text-align: center;
+  }
+
+  #our-team,
+  .fade-team {
+    height: 350px;
+  }
+
+  .our-team-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .our-team-text p {
+    width: 100%;
+  }
+
+  #book-home {
+    display: flex;
+    height: 350px;
+  }
+
+  .book-home-text {
+    padding: initial;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  header {
+    height: 350px;
+  }
+
+  header img {
+    width: 250px;
+  }
+
+  header nav ul {
+    column-gap: 85px;
+    flex-wrap: wrap;
+  }
+
+  .delivery {
+    margin-top: 14px;
+  }
+
+  #presentation {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header nav ul {
+    column-gap: 50px;
+  }
+
+  #menu-home {
+    height: 800px;
+  }
+
+  #menu-home img {
+    height: 350px;
+  }
+
+  #our-team,
+  #book-home,
+  .fade-team {
+    height: 400px;
+  }
+}
+
+@media screen and(max-width: 310px) {
+  #presentation {
+    height: 600px;
+  }
+}
