@@ -1,0 +1,249 @@
+@import url(//db.onlinewebfonts.com/c/ed147ffc0c22f110b20a665b27adfc1b?family=GT+Sectra+Display);
+@import url(//db.onlinewebfonts.com/c/06fcebf2389f170c4e0f9e5286b1c5f6?family=Azo+Sans+Lt);
+
+@font-face {
+  font-family: "GT Sectra Display";
+  src: url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot");
+  src: url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.svg#GT Sectra Display")
+      format("svg");
+}
+@font-face {
+  font-family: "Azo Sans Lt";
+  src: url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.eot");
+  src: url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.svg#Azo Sans Lt")
+      format("svg");
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: "GT Sectra Display";
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+p,
+a {
+  font-family: "Azo Sans Lt";
+}
+
+#nav-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  position: fixed;
+  top: 0;
+  text-transform: uppercase;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: transparent;
+  transition: background-color 1s;
+}
+
+#nav-page img {
+  width: 205px;
+  padding: 26px 0px;
+}
+
+#nav-page nav ul {
+  display: flex;
+  gap: 30px;
+  padding-inline-start: 0px;
+}
+
+#nav-page nav ul li {
+  list-style-type: none;
+  font-family: "Azo Sans Lt";
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+#nav-page nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav-page nav ul li a:hover {
+  padding: 5px 0px;
+  border-bottom: 1px solid black;
+}
+
+.here {
+  padding: 5px 0px;
+  border-bottom: 1px solid black;
+}
+
+header {
+  height: 380px;
+  width: 100%;
+  background-image: url("../assets/backgrounds/IMG_2705-1250x833.jpg");
+}
+
+.fade-white {
+  background: rgba(255, 255, 255, 0.52);
+  height: 380px;
+}
+
+.fade-white h1 {
+  line-height: 380px;
+  text-align: center;
+  margin-block-start: 0em;
+  text-transform: uppercase;
+  font-size: 59px;
+  font-weight: 500;
+}
+
+#description {
+  height: 420px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#description p {
+  width: 40%;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+#our-menu {
+  background-image: url("../assets/backgrounds/0262-Astrid-y-gastón-2716-Foto-Foto-Liz-Tasa-2020_-1920x1280.jpg");
+  height: 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.our-menu-text {
+  grid-column: 2;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.our-menu-text h2 {
+  text-transform: uppercase;
+}
+
+#ice-section {
+  background-image: url("../assets/backgrounds/7B2A9286ok-1250x833.jpg");
+  height: 420px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#bar {
+  background-color: #d4af4e;
+  display: flex;
+  height: 420px;
+  color: #604d45;
+}
+
+#bar img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.bar-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 30px;
+  align-items: center;
+}
+
+.bar-text h2,
+.bar-text p {
+  width: 50%;
+}
+
+#wines {
+  height: 420px;
+  display: flex;
+  background-color: #f6c5b7;
+}
+
+#wines img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.wines-text {
+  color: #604d45;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 30px;
+}
+
+.wines-text h2,
+.wines-text p {
+  width: 50%;
+}
+
+footer {
+  position: relative;
+  background-color: #604d45;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+footer h2 {
+  text-transform: uppercase;
+}
+
+footer a {
+  color: white;
+  font-size: 16px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  font-family: "Azo Sans Lt";
+}
