@@ -43,11 +43,19 @@ h2 {
 
 h2 {
   font-size: 42px;
+  margin-block-start: 0em;
 }
 
 p,
 a {
   font-family: "Azo Sans Lt";
+}
+
+.parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #nav-page {
@@ -135,10 +143,6 @@ header {
 #our-menu {
   background-image: url("../assets/backgrounds/0262-Astrid-y-gastón-2716-Foto-Foto-Liz-Tasa-2020_-1920x1280.jpg");
   height: 420px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -159,10 +163,6 @@ header {
 #ice-section {
   background-image: url("../assets/backgrounds/7B2A9286ok-1250x833.jpg");
   height: 420px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 #bar {
@@ -246,4 +246,188 @@ footer a {
   text-align: center;
   padding: 10px 0px;
   font-family: "Azo Sans Lt";
+}
+
+@media screen and (max-width: 1300px) {
+  .bar-text p,
+  .wines-text p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #description p {
+    width: 80%;
+  }
+
+  .our-menu-text {
+    width: 85%;
+  }
+
+  #bar img,
+  #wines img {
+    width: 60%;
+  }
+
+  .bar-text,
+  .wines-text {
+    width: 40%;
+  }
+
+  footer {
+    height: 455px;
+    display: grid;
+    grid-template-columns: repeat(12, 8%);
+    grid-template-rows: auto auto;
+  }
+
+  .contact {
+    width: max-content;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .on-place {
+    grid-row-start: 1;
+    grid-column-start: 8;
+    width: max-content;
+  }
+
+  .take-away {
+    grid-row-start: 2;
+    grid-column-start: 8;
+    width: max-content;
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .parallax {
+    background-attachment: initial;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #nav-page {
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .fade-white h1 {
+    position: absolute;
+    top: 220px;
+    left: 5%;
+    right: 5%;
+    line-height: normal;
+  }
+
+  #bar img,
+  #wines img {
+    width: 50%;
+  }
+
+  .bar-text,
+  .wines-text {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: normal;
+    justify-content: normal;
+    padding: 20px;
+  }
+
+  .contact {
+    margin-bottom: 1em;
+  }
+
+  .take-away {
+    align-self: initial;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  #description p {
+    font-size: 20px;
+  }
+
+  #our-menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #bar {
+    height: 600px;
+    flex-direction: column-reverse;
+  }
+
+  #wines {
+    height: 600px;
+    flex-direction: column;
+  }
+
+  #bar img,
+  #wines img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .bar-text,
+  .wines-text {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 480px;
+  }
+
+  footer,
+  footer p,
+  footer a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  #nav-page nav ul {
+    column-gap: 60px;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .fade-white h1 {
+    font-size: 40px;
+  }
+
+  #bar,
+  #wines {
+    height: 700px;
+  }
+
+  #bar img,
+  #wines img {
+    height: 350px;
+  }
 }
