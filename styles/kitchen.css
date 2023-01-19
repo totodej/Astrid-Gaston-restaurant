@@ -87,12 +87,12 @@ a {
   list-style-type: none;
   font-family: "Azo Sans Lt";
   text-transform: uppercase;
-  font-size: 13px;
 }
 
 #nav-page nav ul li a {
   color: black;
   text-decoration: none;
+  font-size: 13px;
 }
 
 #nav-page nav ul li a:hover {
@@ -312,6 +312,8 @@ footer a {
     flex-direction: column;
     background-color: white;
     z-index: 1;
+    width: 100%;
+    padding: 0;
   }
 
   .fade-white h1 {
@@ -409,7 +411,7 @@ footer a {
   }
 
   #nav-page nav ul {
-    column-gap: 60px;
+    column-gap: 85px;
     flex-wrap: wrap;
     width: 90%;
     justify-content: center;
@@ -429,5 +431,11 @@ footer a {
   #bar img,
   #wines img {
     height: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav-page nav ul {
+    column-gap: 50px;
   }
 }
