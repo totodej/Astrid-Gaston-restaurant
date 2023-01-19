@@ -295,6 +295,10 @@ footer a {
 }
 
 @media screen and (max-width: 900px) {
+  .parallax {
+    background-attachment: initial;
+  }
+
   .presentation-text {
     width: 70%;
   }
@@ -350,25 +354,6 @@ footer a {
   }
 }
 
-@media screen and (max-width: 750px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    align-items: normal;
-    justify-content: normal;
-    padding: 20px;
-  }
-
-  .contact {
-    margin-bottom: 1em;
-  }
-
-  .take-away {
-    align-self: initial;
-  }
-}
-
 @media screen and (max-width: 800px) {
   #presentation,
   #our-team,
@@ -389,6 +374,25 @@ footer a {
   .bar p,
   .wines p {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: normal;
+    justify-content: normal;
+    padding: 20px;
+  }
+
+  .contact {
+    margin-bottom: 1em;
+  }
+
+  .take-away {
+    align-self: initial;
   }
 }
 
