@@ -56,6 +56,13 @@ a {
   font-size: 18px;
 }
 
+.parallax {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -77,7 +84,6 @@ header img {
 
 header nav ul {
   display: flex;
-  justify-content: center;
   gap: 30px;
   padding-inline-start: 0px;
 }
@@ -120,10 +126,6 @@ header nav ul li a:hover {
 #beginning {
   background-image: url("../assets/backgrounds/6.jpg");
   height: 420px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
 }
 
@@ -133,10 +135,13 @@ header nav ul li a:hover {
 }
 
 .beginning-text {
-  position: absolute;
-  top: 90px;
-  left: 15%;
-  right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  margin: auto;
   text-align: center;
   line-height: 30px;
 }
@@ -180,40 +185,20 @@ header nav ul li a:hover {
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
 }
 
 .fourth-section-text {
-  width: 50%;
-}
-
-.linea2 {
-  width: 1px;
-  height: 29%;
-  background-color: black;
-  position: absolute;
-  top: 14%;
-  right: 76%;
-}
-
-.linea3 {
-  width: 1px;
-  height: 29%;
-  background-color: black;
-  position: absolute;
-  bottom: 19%;
-  right: 76%;
+  width: 80%;
+  border-left: 1px solid black;
+  padding-left: 20px;
 }
 
 #fifth-section {
   height: 420px;
   background-image: url("../assets/backgrounds/7.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .fade-black {
@@ -232,24 +217,8 @@ header nav ul li a:hover {
 
 .fifth-section-text {
   width: 38%;
-}
-
-.linea4 {
-  width: 1px;
-  height: 41%;
-  background-color: white;
-  position: absolute;
-  bottom: 30%;
-  left: 5%;
-}
-
-.linea5 {
-  width: 1px;
-  height: 41%;
-  background-color: white;
-  position: absolute;
-  bottom: 30%;
-  left: 55%;
+  border-left: 1px solid white;
+  padding-left: 20px;
 }
 
 #sixth-section {
@@ -267,45 +236,26 @@ header nav ul li a:hover {
   height: 420px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
 }
 
 .sixth-section-text {
-  width: 50%;
-}
-
-.linea6 {
-  width: 1px;
-  height: 33%;
-  background-color: black;
-  position: absolute;
-  top: 15%;
-  left: 24%;
-}
-.linea7 {
-  width: 1px;
-  height: 30%;
-  background-color: black;
-  position: absolute;
-  bottom: 14%;
-  left: 24%;
+  width: 80%;
+  border-left: 1px solid black;
+  padding-left: 20px;
 }
 
 #seventh-section {
   background-image: url("../assets/backgrounds/1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
 }
 
 .seventh-section-group-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 420px;
   margin-left: 6%;
 }
@@ -313,24 +263,8 @@ header nav ul li a:hover {
 .seventh-section-text {
   color: white;
   width: 70%;
-}
-
-.linea8 {
-  width: 1px;
-  height: 21%;
-  background-color: white;
-  position: absolute;
-  top: 25%;
-  left: 5%;
-}
-
-.linea9 {
-  width: 1px;
-  height: 23%;
-  background-color: white;
-  position: absolute;
-  bottom: 23%;
-  left: 5%;
+  border-left: 1px solid white;
+  padding-left: 20px;
 }
 
 #eightth-section {
@@ -351,53 +285,39 @@ header nav ul li a:hover {
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 420px;
 }
 
 .eightth-section-text {
-  width: 70%;
+  width: 80%;
+  border-left: 1px solid black;
+  padding-left: 20px;
 }
 
 #nineth-section {
   height: 420px;
   background-image: url("../assets/backgrounds/8.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
 }
 
 .nineth-section-group-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 420px;
   margin-left: 6%;
 }
 
 .nineth-section-text {
+  width: 70%;
+  border-left: 1px solid white;
+  padding-left: 20px;
+}
+
+.nineth-section-text {
   color: white;
-}
-
-.linea10 {
-  width: 1px;
-  height: 21%;
-  background-color: white;
-  position: absolute;
-  top: 25%;
-  left: 5%;
-}
-
-.linea11 {
-  width: 1px;
-  height: 21%;
-  background-color: white;
-  position: absolute;
-  bottom: 25%;
-  left: 5%;
 }
 
 footer {
@@ -427,4 +347,229 @@ footer a {
   text-align: center;
   padding: 10px 0px;
   font-family: "Azo Sans Lt";
+}
+
+@media screen and (max-width: 1000px) {
+  #eightth-section,
+  #sixth-section {
+    height: 600px;
+    flex-direction: column;
+  }
+
+  #fourth-section {
+    height: 600px;
+    flex-direction: column-reverse;
+  }
+
+  #eightth-section img,
+  #sixth-section img,
+  #fourth-section img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .eightth-section-group-text,
+  .sixth-section-group-text,
+  .fourth-section-group-text {
+    flex-direction: initial;
+    width: 100%;
+    height: 300px;
+  }
+
+  .eightth-section-text,
+  .sixth-section-text,
+  .fourth-section-text {
+    width: 40%;
+  }
+
+  footer {
+    height: 455px;
+    display: grid;
+    grid-template-columns: repeat(12, 8%);
+    grid-template-rows: auto auto;
+  }
+
+  .contact {
+    width: max-content;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .on-place {
+    grid-row-start: 1;
+    grid-column-start: 8;
+    width: max-content;
+  }
+
+  .take-away {
+    grid-row-start: 2;
+    grid-column-start: 8;
+    width: max-content;
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .parallax {
+    background-attachment: initial;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
+  }
+
+  #title {
+    align-items: end;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: normal;
+    justify-content: normal;
+    padding: 20px;
+  }
+
+  .contact {
+    margin-bottom: 1em;
+  }
+
+  .take-away {
+    align-self: initial;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title-text {
+    width: 90%;
+  }
+
+  #eightth-section,
+  #fourth-section,
+  #sixth-section {
+    height: 800px;
+  }
+
+  #beginning,
+  .fade-white,
+  #fifth-section,
+  .fade-black {
+    height: 600px;
+  }
+
+  .third-section-text {
+    width: 90%;
+  }
+
+  .eightth-section-group-text,
+  .fourth-section-group-text,
+  .sixth-section-group-text {
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .fifth-section-group-text,
+  .seventh-section-group-text {
+    flex-direction: column;
+    height: 600px;
+  }
+
+  .eightth-section-text,
+  .fourth-section-text,
+  .sixth-section-text,
+  .fifth-section-text {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  #title {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 480px;
+  }
+
+  footer,
+  footer p,
+  footer a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    justify-content: initial;
+  }
+
+  header nav ul {
+    column-gap: 85px;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  #title {
+    height: 500px;
+  }
+
+  footer h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header nav ul {
+    column-gap: 50px;
+  }
+
+  #title {
+    height: 550px;
+  }
+
+  #beginning,
+  .fade-white,
+  #fifth-section,
+  .fade-black,
+  .fifth-section-group-text,
+  .sixth-section-group-text,
+  .seventh-section-group-text {
+    height: 800px;
+  }
+
+  #sixth-section,
+  #eightth-section {
+    height: 1000px;
+  }
+  .eightth-section-group-text {
+    height: 700px;
+  }
+
+  #third-section {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #title {
+    height: 610px;
+  }
 }
