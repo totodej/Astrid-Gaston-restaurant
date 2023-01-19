@@ -56,6 +56,13 @@ a {
   font-size: 18px;
 }
 
+.parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 header {
   text-align: center;
   height: 380px;
@@ -107,10 +114,6 @@ header nav ul li a:hover,
   height: 420px;
   text-align: center;
   background-image: url("../assets/backgrounds/7B2A7358ok-Giancarlo-Aponte-copia-1250x833.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,10 +215,6 @@ header nav ul li a:hover,
 #our-team {
   background-image: url("../assets/backgrounds/7B2A8351ok-Giancarlo-Aponte-1250x833.jpg");
   height: 420px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .fade-team {
@@ -252,10 +251,6 @@ header nav ul li a:hover,
 #book-home {
   background-image: url("../assets/backgrounds/ayg-reservas-1250x703.jpg");
   height: 420px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -327,9 +322,60 @@ footer a {
   .book-home-text {
     width: 60%;
   }
+
+  footer {
+    height: 455px;
+    display: grid;
+    grid-template-columns: repeat(12, 8%);
+    grid-template-rows: auto auto;
+  }
+
+  .contact {
+    width: max-content;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .on-place {
+    grid-row-start: 1;
+    grid-column-start: 8;
+    width: max-content;
+  }
+
+  .take-away {
+    grid-row-start: 2;
+    grid-column-start: 8;
+    width: max-content;
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: normal;
+    justify-content: normal;
+    padding: 20px;
+  }
+
+  .contact {
+    margin-bottom: 1em;
+  }
+
+  .take-away {
+    align-self: initial;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  #presentation,
+  #our-team,
+  #book-home {
+    background-attachment: initial;
+  }
+
   .presentation-text {
     width: 90%;
   }
@@ -414,6 +460,16 @@ footer a {
     padding: initial;
     width: 90%;
     margin: auto;
+  }
+
+  footer {
+    height: 480px;
+  }
+
+  footer,
+  footer p,
+  footer a {
+    font-size: 13px;
   }
 }
 
