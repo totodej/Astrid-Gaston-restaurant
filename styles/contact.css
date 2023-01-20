@@ -139,3 +139,66 @@ header {
 .take-away {
   margin-top: 60px;
 }
+
+@media screen and (max-width: 800px) {
+  #nav-page {
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
+  }
+
+  .fade-white h1 {
+    position: absolute;
+    top: 220px;
+    left: 5%;
+    right: 5%;
+    line-height: normal;
+  }
+
+  #contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-left {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  #nav-page nav ul {
+    column-gap: 85px;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .fade-white h1 {
+    font-size: 40px;
+  }
+
+  #contact p,
+  #contact a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav-page nav ul {
+    column-gap: 50px;
+  }
+}
