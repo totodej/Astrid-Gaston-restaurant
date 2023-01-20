@@ -111,41 +111,60 @@
           <h2>Work with us</h2>
           <form action="team.html" method="get" onsubmit="return submitForm()">
             <div class="middle-form">
-              <input type="text" id="lastname" placeholder="Nom" name="nom" />
-              <div id="error-lastname" class="error"></div>
+              <div id="lastname-bloc">
+                <input type="text" id="lastname" placeholder="Nom" name="nom" />
+                <span id="error-lastname" class="error"></span>
+              </div>
+              <div id="firstname-bloc">
+                <input
+                  type="text"
+                  id="firstname"
+                  placeholder="Prénom"
+                  name="prénom"
+                />
+                <span id="error-firstname" class="error"></span>
+              </div>
+            </div>
+            <div id="email-bloc">
+              <input type="email" id="email" placeholder="Email" name="email" />
+              <span id="error-email" class="error"></span>
+            </div>
+            <div id="phone-bloc">
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Téléphone"
+                name="téléphone"
+              />
+              <span id="error-phone" class="error"></span>
+            </div>
+            <div class="middle-form">
+              <div id="city-bloc">
+                <input type="text" id="city" placeholder="Ville" name="ville" />
+                <span id="error-city" class="error"></span>
+              </div>
+              <div id="country-bloc">
+                <input
+                  type="text"
+                  id="country"
+                  placeholder="Pays"
+                  name="pays"
+                />
+                <span id="error-country" class="error"></span>
+              </div>
+            </div>
+            <div id="nationality-bloc">
               <input
                 type="text"
-                id="firstname"
-                placeholder="Prénom"
-                name="prénom"
+                id="nationality"
+                placeholder="Nationalité"
+                name="nationalité"
               />
-              <div id="error-firstname" class="error"></div>
-            </div>
-            <input type="email" id="email" placeholder="Email" name="email" />
-            <div id="error-email" class="error"></div>
-            <input
-              type="tel"
-              id="phone"
-              placeholder="Téléphone"
-              name="téléphone"
-            />
-            <div id="error-phone" class="error"></div>
-            <div class="middle-form">
-              <input type="text" id="city" placeholder="Ville" name="ville" />
-              <div id="error-city" class="error"></div>
-              <input type="text" id="country" placeholder="Pays" name="pays" />
-              <div id="error-country" class="error"></div>
+              <span id="error-nationality" class="error"></span>
             </div>
 
-            <input
-              type="text"
-              id="nationality"
-              placeholder="Nationalité"
-              name="nationalité"
-            />
-            <div id="error-nationality" class="error"></div>
             <div class="middle-form">
-              <div class="job">
+              <div id="work-bloc" class="job">
                 <label>Domaine : </label>
                 <select name="work" id="work">
                   <option value=""></option>
@@ -154,20 +173,23 @@
                   <option value="Bar">Bar</option>
                   <option value="Potager">Potager</option>
                 </select>
-                <div id="error-work" class="error"></div>
+                <span id="error-work" class="error"></span>
               </div>
-              <div class="job">
+              <div id="contract-bloc" class="job">
                 <label>Nature de la relation de travail :</label>
                 <select name="contrat" id="contract">
                   <option value=""></option>
                   <option value="Travail">Travail</option>
                   <option value="Stage">Stage</option>
                 </select>
-                <div id="error-contract" class="error"></div>
+                <span id="error-contract" class="error"></span>
               </div>
             </div>
-            <input type="file" id="file" />
-            <div id="error-file" class="error"></div>
+            <div id="file-bloc">
+              <input type="file" id="file" />
+              <span id="error-file" class="error"></span>
+            </div>
+
             <input type="submit" id="form-submit" />
           </form>
         </div>
