@@ -1,68 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/ed147ffc0c22f110b20a665b27adfc1b?family=GT+Sectra+Display);
-@import url(//db.onlinewebfonts.com/c/06fcebf2389f170c4e0f9e5286b1c5f6?family=Azo+Sans+Lt);
-
-@font-face {
-  font-family: "GT Sectra Display";
-  src: url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot");
-  src: url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.svg#GT Sectra Display")
-      format("svg");
-}
-@font-face {
-  font-family: "Azo Sans Lt";
-  src: url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.eot");
-  src: url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.svg#Azo Sans Lt")
-      format("svg");
-}
-
-body {
-  width: 100%;
-  margin: 0 auto;
-}
-
-h2 {
-  font-size: 42px;
-  font-weight: 300;
-  margin-block-start: 0em;
-  margin-block-end: 0.83em;
-  font-family: "GT Sectra Display";
-}
-
-p,
-a {
-  font-family: "Azo Sans Lt";
-}
-
-p {
-  font-size: 16px;
-}
-
-a {
-  font-size: 18px;
-}
-
-.parallax {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 header {
   text-align: center;
   height: 380px;
@@ -85,21 +20,21 @@ header nav ul {
 }
 
 header nav ul li,
-.delivery {
+.products {
   list-style-type: none;
   font-family: "Azo Sans Lt";
   text-transform: uppercase;
 }
 
 header nav ul li a,
-.delivery a {
+.products a {
   color: black;
   text-decoration: none;
   font-size: 13px;
 }
 
 header nav ul li a:hover,
-.delivery a:hover {
+.products a:hover {
   padding: 5px 0px;
   border-bottom: 1px solid black;
 }
@@ -265,40 +200,7 @@ header nav ul li a:hover,
   grid-column: 2;
 }
 
-footer {
-  position: relative;
-  background-color: #604d45;
-  height: 350px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-}
-
-footer h2 {
-  text-transform: uppercase;
-}
-
-footer a {
-  color: white;
-  font-size: 16px;
-}
-
-.copyright {
-  position: absolute;
-  bottom: 0;
-  left: 0px;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0px;
-  font-family: "Azo Sans Lt";
-}
-
 @media screen and (max-width: 900px) {
-  .parallax {
-    background-attachment: initial;
-  }
-
   .presentation-text {
     width: 70%;
   }
@@ -326,32 +228,6 @@ footer a {
   .book-home-text {
     width: 60%;
   }
-
-  footer {
-    height: 455px;
-    display: grid;
-    grid-template-columns: repeat(12, 8%);
-    grid-template-rows: auto auto;
-  }
-
-  .contact {
-    width: max-content;
-    grid-column-start: 2;
-    grid-row-start: 1;
-  }
-
-  .on-place {
-    grid-row-start: 1;
-    grid-column-start: 8;
-    width: max-content;
-  }
-
-  .take-away {
-    grid-row-start: 2;
-    grid-column-start: 8;
-    width: max-content;
-    align-self: start;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -377,30 +253,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 750px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    align-items: normal;
-    justify-content: normal;
-    padding: 20px;
-  }
-
-  .contact {
-    margin-bottom: 1em;
-  }
-
-  .take-away {
-    align-self: initial;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  h2 {
-    font-size: 32px;
-  }
-
   header img {
     width: 350px;
   }
@@ -465,23 +318,9 @@ footer a {
     width: 90%;
     margin: auto;
   }
-
-  footer {
-    height: 480px;
-  }
-
-  footer,
-  footer p,
-  footer a {
-    font-size: 13px;
-  }
 }
 
 @media screen and (max-width: 450px) {
-  h2 {
-    font-size: 28px;
-  }
-
   header {
     height: 350px;
   }
@@ -495,7 +334,7 @@ footer a {
     flex-wrap: wrap;
   }
 
-  .delivery {
+  .products {
     margin-top: 14px;
   }
 
