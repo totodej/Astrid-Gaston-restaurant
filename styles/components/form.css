@@ -1,0 +1,140 @@
+form {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.middle-form {
+  display: flex;
+  gap: 3%;
+}
+
+#firstname-bloc,
+#lastname-bloc,
+#city-bloc,
+#country-bloc {
+  width: 48%;
+  position: relative;
+}
+
+#email-bloc,
+#phone-bloc,
+#nationality-bloc,
+#contract-bloc,
+#work-bloc,
+#file-bloc {
+  position: relative;
+}
+
+form label {
+  padding: 0px 0px 10px;
+  font-family: "Azo Sans Lt";
+}
+
+form input {
+  border: 1px solid black;
+  height: 30px;
+  font-size: 14px;
+  width: 100%;
+}
+
+#email,
+#phone,
+#nationality {
+  width: 99%;
+}
+
+#work,
+#contract {
+  width: 100.5%;
+  height: 34px;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+select {
+  height: 27px;
+  border: 1px solid black;
+  font-size: 14px;
+}
+
+#file {
+  line-height: 30px;
+}
+
+#form-submit {
+  font-family: "GT Sectra Display";
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 65px;
+  margin: auto;
+  font-size: 18px;
+  padding: 1px 0px;
+  cursor: pointer;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  font-family: "GT Sectra Display";
+}
+
+#error-lastname,
+#error-firstname,
+#error-email,
+#error-phone,
+#error-nationality,
+#error-country,
+#error-city,
+#error-file {
+  top: 35px;
+  left: 0;
+}
+
+#error-work,
+#error-contract {
+  top: 65px;
+}
+
+@media screen and (max-width: 1150px) {
+  form label {
+    font-size: 13px;
+    padding: 0px 0px 5px;
+  }
+
+  #error-work,
+  #error-contract {
+    top: 56px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .middle-form {
+    flex-direction: column;
+  }
+
+  #lastname-bloc,
+  #firstname-bloc,
+  #city-bloc,
+  #country-bloc {
+    width: 99%;
+  }
+
+  #lastname-bloc,
+  #city-bloc,
+  #work-bloc {
+    margin-bottom: 22px;
+  }
+}
