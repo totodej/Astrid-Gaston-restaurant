@@ -1,0 +1,82 @@
+@import url(//db.onlinewebfonts.com/c/ed147ffc0c22f110b20a665b27adfc1b?family=GT+Sectra+Display);
+@import url(//db.onlinewebfonts.com/c/06fcebf2389f170c4e0f9e5286b1c5f6?family=Azo+Sans+Lt);
+
+@font-face {
+  font-family: "GT Sectra Display";
+  src: url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot");
+  src: url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.svg#GT Sectra Display")
+      format("svg");
+}
+@font-face {
+  font-family: "Azo Sans Lt";
+  src: url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.eot");
+  src: url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/06fcebf2389f170c4e0f9e5286b1c5f6.svg#Azo Sans Lt")
+      format("svg");
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 300;
+  margin-block-start: 0em;
+  margin-block-end: 0.83em;
+  font-family: "GT Sectra Display";
+}
+
+p,
+a {
+  font-family: "Azo Sans Lt";
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  font-size: 18px;
+}
+
+.parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .parallax {
+    background-attachment: initial;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 28px;
+  }
+}
