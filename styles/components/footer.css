@@ -1,0 +1,93 @@
+footer {
+  position: relative;
+  background-color: #604d45;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+footer h2 {
+  text-transform: uppercase;
+}
+
+footer a {
+  color: white;
+  font-size: 16px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  font-family: "Azo Sans Lt";
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    height: 455px;
+    display: grid;
+    grid-template-columns: repeat(12, 8%);
+    grid-template-rows: auto auto;
+  }
+
+  .contact {
+    width: max-content;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .on-place {
+    grid-row-start: 1;
+    grid-column-start: 8;
+    width: max-content;
+  }
+
+  .take-away {
+    grid-row-start: 2;
+    grid-column-start: 8;
+    width: max-content;
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: normal;
+    justify-content: normal;
+    padding: 20px;
+  }
+
+  .contact {
+    margin-bottom: 1em;
+  }
+
+  .take-away {
+    align-self: initial;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 480px;
+  }
+
+  footer,
+  footer p,
+  footer a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer h2 {
+    font-size: 28px;
+  }
+}
