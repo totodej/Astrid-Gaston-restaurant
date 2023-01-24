@@ -1,0 +1,35 @@
+header {
+  background-image: url("../../assets/backgrounds/ayg-contacto-1250x833.jpg");
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 5% 5% 5%;
+}
+
+.contact-left a {
+  color: black;
+}
+
+.take-away {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  #contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-left {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #contact p,
+  #contact a {
+    font-size: 13px;
+  }
+}

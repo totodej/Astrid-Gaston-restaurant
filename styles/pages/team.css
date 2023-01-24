@@ -1,0 +1,206 @@
+header {
+  background-image: url("../../assets/backgrounds/7B2A7766ok-1250x833.jpg");
+}
+
+#saloon {
+  background-color: #d4af4e;
+  height: 420px;
+  display: flex;
+}
+
+#saloon img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.saloon-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  color: #604d45;
+}
+
+.saloon-text p {
+  width: 70%;
+}
+
+#kitchen {
+  background-image: url("../../assets/backgrounds/7B2A1435ok-1-1250x833.jpg");
+  height: 420px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.kitchen-text {
+  grid-column: 2;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+  text-align: center;
+}
+
+#harvest {
+  background-image: url("../../assets/backgrounds/7B2A0164okGiancarlo-Aponte-1250x833.jpg");
+  height: 420px;
+}
+
+#bar {
+  background-color: #a4b575;
+  height: 420px;
+  display: flex;
+}
+
+#bar img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.bar-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 30px;
+  color: #604d45;
+}
+
+.bar-text p {
+  width: 70%;
+}
+
+#wine-waiter {
+  background-image: url("../../assets/backgrounds/ayg-vinos-4-1400x789.jpg");
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wine-waiter-text {
+  text-align: center;
+  line-height: 30px;
+  width: 30%;
+}
+
+#join-us {
+  background-color: #8c6d86;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-us-text {
+  width: 30%;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+}
+
+#work-with-us {
+  padding: 5px 0px;
+  border-bottom: 1px solid white;
+  font-family: "GT Sectra Display";
+  width: 150px;
+  margin: auto;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  .saloon-text,
+  .bar-text {
+    width: 40%;
+  }
+
+  #saloon img,
+  #bar img {
+    width: 60%;
+  }
+
+  .saloon-text p,
+  .bar-text p,
+  .kitchen-text {
+    width: 90%;
+  }
+
+  .join-us-text {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #saloon,
+  #bar {
+    height: 600px;
+    flex-direction: column;
+  }
+
+  .saloon-text,
+  .bar-text {
+    height: 300px;
+    width: 90%;
+    margin: auto;
+  }
+
+  #saloon img,
+  #bar img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .wine-waiter-text,
+  .join-us-text {
+    width: 90%;
+  }
+
+  #kitchen {
+    display: flex;
+  }
+
+  .kitchen-text {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #saloon,
+  #bar {
+    height: 800px;
+  }
+
+  .saloon-text,
+  .bar-text,
+  #saloon img,
+  #bar img {
+    height: 400px;
+  }
+
+  #kitchen,
+  #join-us {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #saloon {
+    height: 900px;
+  }
+
+  .saloon-text {
+    height: 500px;
+  }
+
+  #kitchen {
+    height: 600px;
+  }
+}
