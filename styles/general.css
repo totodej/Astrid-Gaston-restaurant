@@ -1,5 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/ed147ffc0c22f110b20a665b27adfc1b?family=GT+Sectra+Display);
 @import url(//db.onlinewebfonts.com/c/06fcebf2389f170c4e0f9e5286b1c5f6?family=Azo+Sans+Lt);
+@import url(//db.onlinewebfonts.com/c/cf3327022417d4ff7f54f0963c4f41ea?family=Akkurat);
 
 @font-face {
   font-family: "GT Sectra Display";
@@ -30,6 +31,21 @@
       format("svg");
 }
 
+@font-face {
+  font-family: "Akkurat";
+  src: url("//db.onlinewebfonts.com/t/cf3327022417d4ff7f54f0963c4f41ea.eot");
+  src: url("//db.onlinewebfonts.com/t/cf3327022417d4ff7f54f0963c4f41ea.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/cf3327022417d4ff7f54f0963c4f41ea.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/cf3327022417d4ff7f54f0963c4f41ea.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/cf3327022417d4ff7f54f0963c4f41ea.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/cf3327022417d4ff7f54f0963c4f41ea.svg#Akkurat")
+      format("svg");
+}
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -41,6 +57,11 @@ h2 {
   margin-block-start: 0em;
   margin-block-end: 0.83em;
   font-family: "GT Sectra Display";
+}
+
+h3 {
+  font-family: "GT Sectra Display";
+  font-weight: 500;
 }
 
 p,
