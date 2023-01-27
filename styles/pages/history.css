@@ -1,3 +1,7 @@
+header {
+  background-image: url("../../assets/backgrounds/history.jpg");
+}
+
 #title {
   height: 420px;
   display: flex;
