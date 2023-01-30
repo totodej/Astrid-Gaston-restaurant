@@ -43,12 +43,12 @@ const submitForm = () => {
   const emailValidation = (input, name, text) => {
     const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if (regex.test(input.value) || input.value === "") {
-      document.getElementById("error-" + name).innerHTML =
-        "*Remplir le champ " + text;
-      validate = false;
-    } else {
+    if (regex.test(input.value)) {
       document.getElementById("error-" + name).innerHTML = "";
+    } else {
+      document.getElementById("error-" + name).innerHTML =
+        "*Remplir le champ " + text + " correctement";
+      validate = false;
     }
   };
 
